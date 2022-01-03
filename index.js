@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-
+const interactione = require('./src/events/client/interactionCreate');
 const Client = require('./src/structures/Client');
 
 const client = new Client({
@@ -15,18 +15,18 @@ const client = new Client({
     ]
 });
 
-client.once('ready', function(){
-    console.log("bot Logado")
-})
-
-client.on('message', function(message){
+client.on('message', function(messageCreate){
     
+    const content = message.content
     if( message.author.username == 'Gustavo Cassimiro' && message.author.discriminator =='7604')
     {
-        message.reply(`VSF MLK, TE ODEIO`)
+        messageCreate.reply(`VSF MLK, TE ODEIO`)
     }
- 
-    console.log(message.author.username)
+
+    // if(content.substr(0,1) =='!'){
+    //     interaction.run()
+    // }
+    console.log()
 })
 
 client.login(process.env.BOT_TOKEN);

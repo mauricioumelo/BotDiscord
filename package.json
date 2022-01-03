@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +13,8 @@
     "discord.js": "^13.5.0",
     "dotenv": "^10.0.0",
     "git-flow": "^0.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
