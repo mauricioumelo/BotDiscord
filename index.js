@@ -23,7 +23,7 @@ client.on('message', function(message){
     
     if( message.author.username == 'Gustavo Cassimiro' && message.author.discriminator =='7604')
     {
-        message.reply(`VSF MLK, TE ODEIO`)
+        message.reply(`OLA `)
     }
  
     console.log(message.author.username)
