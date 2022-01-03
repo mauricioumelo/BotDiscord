@@ -20,7 +20,7 @@ client.on('message', function(messageCreate){
     const content = message.content
     if( message.author.username == 'Gustavo Cassimiro' && message.author.discriminator =='7604')
     {
-        messageCreate.reply(`VSF MLK, TE ODEIO`)
+        message.reply(`OLA `)
     }
 
     // if(content.substr(0,1) =='!'){
